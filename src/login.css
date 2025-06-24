@@ -1,58 +1,145 @@
-/* Background Color for entire page */
 body{
-    background-color: rgb(250, 250, 250);
+    background-color: black;
+}
+.login-text, .hero-text-2{
+  color: rgb(0, 0, 0);
+}
+.hero-text-2{
+  font-size: 12px;
 }
 
-.main-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-h1{
+.text{
     color: black;
-    
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    background-color: rgb(255, 255, 255);
-    padding: 48px;
-    border-radius: 24px;
-    box-shadow: 2px 2px 5px rgb(224, 224, 224), -2px -2px 5px rgb(224, 224, 224);
+.login-page-image{
+    background-color: black;
+}
+/* Common font size for label and hyperlink */
+label{
+  font-size: 13px;
 }
 
-.textbox, .login-button{
-    height: 30px;
-    min-width: 300px;
+/* Forgot Password styling */
+#forgot-password {  
+  font-size: 12px;  /* Reduced Font size for the text, "label" and "a" tags have different sizes even if set the same  */
+  text-decoration: none;
+  color: inherit;
+  color: rgb(0, 0, 0);
 }
 
-.textbox{
-    border-radius: 200px;
-    border-style: solid;
-    border-color: rgb(92, 92, 92);
-}
-
-.textbox:focus{
-    outline: none;
-}
-
-.login-button{
-    border-radius: 12px;
-    background-color: rgb(0, 0, 0);
-    margin-top: 60px;
-    min-height: 40px;
-    border:0px;
-    color: white;
-    cursor: pointer;
+a{
+ color: rgb(0, 0, 0);
+ font-size: 12px;
+ text-decoration: none;
 }
 
 
-.login-button:hover{
-    background-color: rgb(68, 68, 68);
+
+
+/* .hero-text{
+  font-size: 48px;
 }
 
+.hero-text-2{
+  font-size: 18px;
+} */
+
+
+/* Main Container for login*/
+.container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 24px;
+  height: 90vh;
+  gap:24px;
+}
+
+/* Login styling */
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 36px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  max-height: 400px;
+  border: 2px solid #e2e2e2;
+  background-color: white;
+  /* box-shadow: 2px 2px 5px rgb(224, 224, 224), -2px -2px 5px rgb(224, 224, 224); */
+  backdrop-filter: blur(10px);
+}
+
+
+/* .left-container{
+  display: flex;
+  flex-direction: column;
+  flex:2;
+  padding: 36px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  max-height: 450px;
+  height: 100%;
+} */
+
+
+/* Textbox styles */
+.textbox {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding-left: 12px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 246px;
+  background-color: rgba(0, 0, 0, 0.3);
+  resize: none;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+}
+
+.textbox::placeholder{
+    color:rgb(0, 0, 0);
+}
+
+/* Button styyles */
+.buttons {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 246px;
+  font-family: "IBM Plex Mono", monospace;
+  cursor: pointer;
+}
+
+/* button on hover effects */
+.buttons:hover{
+    background-color: #d6d6d6;
+}
+.check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
